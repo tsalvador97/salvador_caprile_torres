@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>*nombre*</title>
+    <link rel="icon" type="image/png" href="media/favicon.png" />
+    <!-- Metadatos genéricos -->
+    <meta name="description" content="descripción de la página">
+    <meta name="image" content="media/imagen.png">
+    <!-- Metadatos Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="título de la página">
+    <meta name="twitter:description" content="descripción de la página">
+    <meta name="twitter:image:src" content="media/imagen.png">
+    <!-- Metadatos Open Graph (Facebook, Pinterest & LinkedIn) -->
+    <meta name="og:title" content="título de la página">
+    <meta name="og:description" content="descripción de la página">
+    <meta name="og:image" content="media/imagen.png">
+    <meta name="og:type" content="website">
+    <!-- Ahora vinculamos el estilo -->
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h1>*nombre del equipo*</h1>
+        <h2>*descripción del equipo*</h2>
+    </header>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="media/video.webm" type="video/webm">
+        <source src="media/video.mp4" type="video/mp4">
+    </video>
+    <main>
+        <section id="equipo">
+            <h3>Quiénes somos</h3>
+            <div class="integrante">
+                <h4>INTEGRANTE UNO</h4>
+                <address><a href="mailto:mail@uc.cl">mail@uc.cl</a></address>
+                <blockquote>Good design is as little design as possible <cite>Dieter Rams</cite></blockquote>
+            </div>
+            <div class="integrante">
+                <h4>INTEGRANTE DOS</h4>
+                <address><a href="mailto:mail@uc.cl">mail@uc.cl</a></address>
+                <blockquote>Design is intelligence made visible <cite>Alina Wheeler</cite></blockquote>
+            </div>
+            <div class="integrante">
+                <h4>INTEGRANTE TRES</h4>
+                <address><a href="mailto:mail@uc.cl">mail@uc.cl</a></address>
+                <blockquote>A designer is a planner with an aesthetic sense <cite>Bruno Munari</cite></blockquote>
+            </div>
+        </section>
+        <section id="portafolio">
+            <h3>Nuestros trabajos</h3>
+            <!--acá se colocan y organizan las cosas con programación-->
+        </section>
+    </main>
+    <footer>
+        <p>Procesos de Producción · sección web · segundo semestre · 2019</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script>
+        window.onload = function() {
+            var container = document.querySelector('#portafolio');
+            var msnry = new Masonry(portafolio, {
+                itemSelector: '.item'
+            });
+        };
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="portafolio.js"></script>
+</body>
+
+</html>
