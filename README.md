@@ -1,4 +1,4 @@
-# *Entrega N°1**
+# *Entrega N°1*
 
 # Best Team Ever
 
